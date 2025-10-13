@@ -1,5 +1,5 @@
 <h1>
-  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/Icon%20Files/Icon%20background%20removed.png?token=GHSAT0AAAAAACCSKETJDFLAQOF2FAS3TMDY2HMPYTQ" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
+  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/Icon%20Files/Icon%20background%20removed.png" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
   <em>FastNote</em>
 </h1>
 
@@ -15,3 +15,4 @@ The goal is simple: to have a small and fast program with no frills.
 - In my very scientific testing (trust me!), the utility uses 7 times less ram than modern notepad on average
 - No AI or Microsoft pestering!
 
+[![Donate](https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a02fcf48af59c591185_support_me_on_kofi_dark-p-500.png)](https://ko-fi.com/saintsoftware/donate)
