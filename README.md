@@ -1,5 +1,5 @@
 <h1>
-  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/Icon%20Files/Icon%20background%20removed.png?token=GHSAT0AAAAAACCSKETJDFLAQOF2FAS3TMDY2HMPYTQ" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
+  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/Icon%20Files/Icon%20background%20removed.png" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
   <em>FastNote</em>
 </h1>
 
