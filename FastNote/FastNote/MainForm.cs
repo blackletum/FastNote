@@ -12,7 +12,6 @@ namespace FastNote
         public MainForm()
         {
             Text = "FastNote"; Width = 800; Height = 600;
-            //Icon = Icon.ExtractAssociatedIcon(Environment.ExpandEnvironmentVariables(@"%SystemRoot%\System32\notepad.exe"));
             Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             var m = new MenuStrip();
             var f = new ToolStripMenuItem("File");
@@ -91,7 +90,18 @@ namespace FastNote
 
         void ShowAbout()
         {
-            var f = new Form { Text = "About FastNote", Width = 460, Height = 220, FormBorderStyle = FormBorderStyle.FixedDialog, MaximizeBox = false, MinimizeBox = false, StartPosition = FormStartPosition.CenterParent };
+            var f = new Form
+            {
+                Text = "About FastNote",
+                Width = 460,
+                Height = 220,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false,
+                StartPosition = FormStartPosition.CenterParent,
+                Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+            };
+
             var title = new Label { Text = "FastNote", Font = new Font("Segoe UI", 12, FontStyle.Italic), AutoSize = true, Location = new Point(12, 12) };
             var desc = new Label { Text = "A minimal note-taking application.\r\nWritten by SaintSoftware w/ ChatGPT assistance.\r\nCheck for new releases and source code on GitHub.", AutoSize = true, Location = new Point(12, 40) };
             var link = new LinkLabel { Text = "https://github.com/blackletum/FastNote", AutoSize = true, Location = new Point(12, 84) };
