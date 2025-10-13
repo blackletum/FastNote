@@ -93,25 +93,74 @@ namespace FastNote
             var f = new Form
             {
                 Text = "About FastNote",
-                Width = 460,
-                Height = 220,
                 FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterParent,
                 MaximizeBox = false,
                 MinimizeBox = false,
-                StartPosition = FormStartPosition.CenterParent,
+                ClientSize = new Size(420, 200),
                 Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
             };
 
-            var title = new Label { Text = "FastNote", Font = new Font("Segoe UI", 12, FontStyle.Italic), AutoSize = true, Location = new Point(12, 12) };
-            var desc = new Label { Text = "A minimal note-taking application.\r\nWritten by SaintSoftware w/ ChatGPT assistance.\r\nCheck for new releases and source code on GitHub.", AutoSize = true, Location = new Point(12, 40) };
-            var link = new LinkLabel { Text = "https://github.com/blackletum/FastNote", AutoSize = true, Location = new Point(12, 84) };
-            link.LinkClicked += (s, e) => { try { Process.Start(new ProcessStartInfo(link.Text) { UseShellExecute = true }); } catch { } };
-            var scam = new Label { Text = "If you have paid for this program, you have been SCAMMED.", Font = new Font("Segoe UI", 9, FontStyle.Bold), AutoSize = true, Location = new Point(12, 110) };
-            var ok = new Button { Text = "OK", DialogResult = DialogResult.OK, Anchor = AnchorStyles.Bottom | AnchorStyles.Right, Size = new Size(80, 26), Location = new Point(f.ClientSize.Width - 92, f.ClientSize.Height - 40) };
-            ok.Click += (s, e) => f.Close();
-            f.Controls.AddRange(new Control[] { title, desc, link, scam, ok });
+            var layout = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                FlowDirection = FlowDirection.TopDown,
+                Padding = new Padding(15),
+                AutoScroll = true,
+                WrapContents = false
+            };
+
+            var title = new Label
+            {
+                Text = "FastNote",
+                Font = new Font("Segoe UI", 14, FontStyle.Italic),
+                AutoSize = true
+            };
+
+            var desc = new Label
+            {
+                Text = "A minimal note-taking application.\nWritten by blackletum.\nCheck for new releases and source code on GitHub.",
+                AutoSize = true
+            };
+
+            var link = new LinkLabel
+            {
+                Text = "https://github.com/blackletum/FastNote",
+                AutoSize = true
+            };
+            link.LinkClicked += (s, e) =>
+            {
+                try { Process.Start(new ProcessStartInfo(link.Text) { UseShellExecute = true }); } catch { }
+            };
+
+            var license = new Label
+            {
+                Text = "FastNote is licensed under the MIT License.",
+                AutoSize = true
+            };
+
+            var scam = new Label
+            {
+                Text = "If you have paid for this program, you have been SCAMMED.",
+                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                ForeColor = Color.DarkRed,
+                AutoSize = true
+            };
+
+            var ok = new Button
+            {
+                Text = "OK",
+                DialogResult = DialogResult.OK,
+                Anchor = AnchorStyles.Right,
+                Width = 80
+            };
+
+            layout.Controls.AddRange(new Control[] { title, desc, link, license, scam, ok });
+            f.Controls.Add(layout);
             f.AcceptButton = ok;
+
             f.ShowDialog();
         }
+
     }
 }
