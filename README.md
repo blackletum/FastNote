@@ -7,6 +7,10 @@ An extremely lightweight, self-contained Notepad alternative for Windows.
 
 The goal is simple: to have a small and fast program with no frills.
 
+<h1>
+  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/preview.png" alt="FastNote Preview" style="vertical-align: middle;">
+</h1>
+
 ## Features
 - Fully self-contained EXE 
 - Custom icon that shows in the window and About dialog (fancy!)
