@@ -3,6 +3,12 @@
   <em>FastNote</em>
 </h1>
 
+[Link to the original repository](https://github.com/blackletum/FastNote.git)
+
+> [!NOTE]
+> This is a fork of SaintSoftware's FastNote project, with my preferred changes to it.
+> This has also been migrated from .NET Framework v4.7.2 to .NET 8.0.
+
 An extremely lightweight, self-contained Notepad alternative for Windows. 
 
 The goal is simple: to have a small and fast program with no frills.

@@ -1,0 +1,11 @@
+<Solution>
+	<Folder Name="/Solution Items/">
+		<File Path=".gitattributes" />
+		<File Path=".gitignore" />
+		<File Path="LICENSE" />
+		<File Path="README.md" />
+	</Folder>
+	<Folder Name="/Main/">
+		<Project Path="src/FastNote/FastNote.csproj" />
+	</Folder>
+</Solution>
