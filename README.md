@@ -1,12 +1,12 @@
 <h1>
-  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/Icon%20Files/Icon%20background%20removed.png" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
+  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/src/Icon%20Files/Icon%20background%20removed.png" width="32" height="32" alt="FastNote Icon" style="vertical-align: middle;">
   <em>FastNote</em>
 </h1>
 
-[Link to the original repository](https://github.com/blackletum/FastNote.git)
+[Link to the original repository](https://github.com/blackletum/FastNote/tree/main_original)
 
 > [!NOTE]
-> This is a fork of SaintSoftware's FastNote project, with my preferred changes to it.
+> This is now based on the forked version of PracticeMedicine's FastNote repo, with his preferred changes to it.
 > This has also been migrated from .NET Framework v4.7.2 to .NET 8.0.
 
 An extremely lightweight, self-contained Notepad alternative for Windows. 
@@ -14,7 +14,7 @@ An extremely lightweight, self-contained Notepad alternative for Windows.
 The goal is simple: to have a small and fast program with no frills.
 
 <h1>
-  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/FastNote/preview.png" alt="FastNote Preview" style="vertical-align: middle;">
+  <img src="https://raw.githubusercontent.com/blackletum/FastNote/refs/heads/main/preview.png" alt="FastNote Preview" style="vertical-align: middle;">
 </h1>
 
 ## Features
