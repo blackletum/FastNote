@@ -20,6 +20,7 @@ public partial class MainForm : Form
     public MainForm()
     {
         InitializeComponent();
+        box.MaxLength = 0;
     }
 
     private void darkMode_CheckedChanged(object sender, EventArgs e)
