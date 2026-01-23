@@ -12,8 +12,14 @@
 		<ApplicationIcon>fastnote.ico</ApplicationIcon>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<OutputPath>$(SolutionDir)\bin\$(Platform)</OutputPath>
+		
+		<!-- Self-contained single-file deployment -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 	</PropertyGroup>
-
 	<!-- Assembly information -->
 	<PropertyGroup>
 		<Version>1.0.0.0</Version>
