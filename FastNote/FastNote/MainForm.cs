@@ -45,7 +45,6 @@ namespace FastNote
             var panel = new Panel { Dock = DockStyle.Fill, Padding = new Padding(4, m.Height + 2, 4, 4) };
             panel.Controls.Add(box);
             Controls.Add(panel);
-            MainMenuStrip = m;
             KeyPreview = true;
             KeyDown += KeysHandler;
             box.TextChanged += (s, e) => dirty = true;
