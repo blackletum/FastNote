@@ -124,6 +124,7 @@ partial class MainForm
         darkMode.Name = "darkMode";
         darkMode.Size = new Size(134, 22);
         darkMode.Text = "Dark Mode";
+        darkMode.CheckOnClick = true;
         darkMode.CheckedChanged += darkMode_CheckedChanged;
         // 
         // help
