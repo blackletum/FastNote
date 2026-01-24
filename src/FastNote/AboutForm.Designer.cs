@@ -59,7 +59,7 @@ partial class AboutForm
         title.Name = "title";
         title.Size = new System.Drawing.Size(84, 25);
         title.TabIndex = 0;
-        title.Text = "FastNote v1.1";
+        title.Text = "FastNote v1.1.1";
         // 
         // desc
         // 
